@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Recommendations</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Food Recommendations</h1>
+		<div class="form">
+			<label for="mood">How are you feeling today?</label>
+			<select id="mood" name="mood">
+				<option value="happy">Happy</option>
+				<option value="sad">Sad</option>
+				<option value="stressed">Stressed</option>
+				<option value="excited">Excited</option>
+			</select>
+			<button onclick="suggestFood()">Suggest Food</button>
+		</div>
+		<div id="result">
+			<div id="loading">
+				<div class="spinner"></div>
+				<p>Loading...</p>
+			</div>
+			<div id="food-info">
+				<p id="food-recommendation"></p>
+				<img id="food-image" src="" alt="">
+			</div>
+		</div>
+		<div id="bubbles"></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
